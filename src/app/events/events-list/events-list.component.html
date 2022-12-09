@@ -1,5 +1,8 @@
 <div>
   <h1>Upcoming events list!!!</h1>
   <hr />
-  <event-thumbnail [event]="eventData"></event-thumbnail>
+  <event-thumbnail
+    [event]="eventData"
+    (eventClick)="eventClickHandler($event)"
+  ></event-thumbnail>
 </div>

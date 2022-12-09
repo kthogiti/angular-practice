@@ -19,4 +19,8 @@ export class EventsListComponent {
       country: 'India'
     }
   };
+
+  eventClickHandler = (e: any) => {
+    console.log(e, 'from parent');
+  };
 }
