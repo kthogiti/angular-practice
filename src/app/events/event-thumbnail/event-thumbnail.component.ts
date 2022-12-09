@@ -6,13 +6,12 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./event-thumbnail.component.css']
 })
 export class EventThumbnailComponent {
-  @Input('event')
-  event: any;
+  @Input('event') event: any;
 
-  @Output('eventClick') eventClick = new EventEmitter();
+  someProperty = 'some value';
 
-  btnClick = () => {
-    this.eventClick.emit(this.event);
-    console.log('clicked!');
+  logFoo = () => {
+    this.someProperty = 'some property changed';
+    console.log('Foo');
   };
 }
