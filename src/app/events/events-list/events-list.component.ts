@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./events-list.component.css']
 })
 export class EventsListComponent {
-  event = {
+  eventData = {
     id: 1,
     name: 'Angular Connect',
     date: '2/14/2023',
-    time: '10:00 am',
+    time: '10:00 pm',
     price: 599.99,
     imageUrl: '/assets/images/angularconnect-shield.png',
     location: {
